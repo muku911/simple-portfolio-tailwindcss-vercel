@@ -1,7 +1,6 @@
-"use client";
 import "./globals.css";
+import Providers from "./providers";
 import Navbar from "@/components/Navbar";
-import { ThemeProvider } from "next-themes";
 
 export default function RootLayout({
   children,
@@ -19,10 +18,10 @@ export default function RootLayout({
         <meta name="description" content="Simple Portofolio" />
       </head>
       <body>
-        <ThemeProvider enableSystem={true} attribute="class">
+        <Providers>
           <Navbar />
           {children}
-        </ThemeProvider>
+        </Providers>
       </body>
     </html>
   );

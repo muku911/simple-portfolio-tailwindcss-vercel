@@ -40,7 +40,7 @@ const Navbar = () => {
   const currentTheme = theme === "system" ? systemTheme : theme;
   // Navbar show state
   const [navbar, setNavbar] = useState(false);
-  console.log(systemTheme, theme, currentTheme);
+
   return (
     <header
       className="w-full mx-auto px-4 bg-white shadow fixed top-0 z-50
